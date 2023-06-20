@@ -1,9 +1,11 @@
+// Найбільша цифра в числі
+
 function getMaxDigit(number) {
     const arrayOfDigits = number.toString().split('')
     return Math.max.apply(null, arrayOfDigits)
 }
 
-
+// Ступінь числа
 
 function pow(number, smallNumber) {
     let a = number
@@ -16,22 +18,28 @@ function pow(number, smallNumber) {
     return a
 }
 
+// Форматування ім'я
+
 function capitalize(name) {
     const [firstLetter, ...rest] = name.split('')
     const formattedName = `${firstLetter.toUpperCase()}${rest.join('').toLowerCase()}` 
     return formattedName
 }
 
+// Податок
 
 function percent(number) {
     const summ = (number * 19.5) / 100
     return number - summ
 }
 
+// Випадкове число в діапазоні
+
 function getRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min) + min)
 } 
 
+// Кількість використання певної букви в слові
 
 function countLetter(letter, word) {
     const array = word.split('')
