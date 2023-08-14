@@ -14,8 +14,8 @@ function getStudentsThemes(pairs, themes) {
     themesPairs.map((item, index) => item.push(themes[index]))
     return themesPairs
 }
-const themesPairs = getStudentsThemes(pairs, themes)
-console.log("Теми для пар", themesPairs)
+const themesPairs = getStudentsThemes(getPairs(students), themes)
+console.log("Теми для пар", getStudentsThemes(getPairs(students), themes))
 
 function getStudentsMark(students, marks) {
    const arr = students.map((item, index) => [item, marks[index]])
